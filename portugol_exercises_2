@@ -1,0 +1,31 @@
+programa
+{
+algoritmo Bufet 2
+//Requisito funcional: calcular o custo da contratação de equipe para evento
+	//por Isabel Cruz
+//Referência: Portugol Studio - UNIVALI – Universidade do Vale do Itajaí
+	funcao inicio()
+	{
+		inteiro horasEvento=10, numGar=8, numMait=2 , convid, quantFunc
+		//Optei por criar um maitre para diferenciar o valor da hora trabalhada
+		//E também temos 1 maitre para cada 3 garçons
+		const inteiro MINCONVID = 20
+		const real HORASALGAR = 10.5
+		const real HORASALMAIT = 12.00
+		//como este algoritmo será usado em outros exercícios, criei estas constantes
+		
+		real custoTotal //variável custoTotal recebe o resultado da operação aritmética
+		leia(convid) //número previsto de convidados
+		limpa()
+		
+		// processamento
+		quantFunc = (convid/MINCONVID) //cálculo da quantidade de funcionários necessária
+		
+		//Cálculo do custo de uma equipe (garçons e maitre) por evento		
+         custoTotal = (horasEvento*numGar*HORASALGAR)+(horasEvento*numMait*HORASALMAIT)
+          
+         escreva("Para ", convid, " convidados serão necessários ", quantFunc, " funcionários\n", "O valor total da contratação de ", numGar, " garçons e ", numMait, " maitre é R$", custoTotal)
+
+		
+	}
+}
