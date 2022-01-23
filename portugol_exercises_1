@@ -1,0 +1,24 @@
+programa
+{
+//algoritmo "bufet"
+// Requisito funcional: calcular a equipe necessária ao evento
+//Fonte: Portugol Lite - Univale
+//por Isabel Cruz
+	funcao inicio()
+	{
+		inteiro horasEvento=8, numGar=3, numMait=1 
+		//Optei por criar um maitre para diferenciar o valor da hora trabalhada
+		
+		const real HORASALGAR = 10.5
+		const real HORASALMAIT = 12.00
+		//como este algoritmo será usado em outros exercícios, criei estas constantes
+		
+		real custoTotal //variável custoTotal recebe o resultado da operação aritmética
+		
+		// processamento
+         custoTotal = (horasEvento*numGar*HORASALGAR)+(horasEvento*numMait*HORASALMAIT)
+         //Cálculo do custo de uma equipe (garçons e maitre) por evento 
+         escreva("O valor total da contratação de ", numGar, " garçons e ", numMait, " maitre é R$", custoTotal)
+
+		
+	}
